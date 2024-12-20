@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlimited Image Compressor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.7.1/dist/jszip.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="title">Unlimited Image Compressor</h1>
+    <div class="upload-area" id="uploadArea">
+      <p>Drag & Drop Images Here</p>
+      <button id="uploadButton">Upload Images</button>
+      <input type="file" id="imageInput" accept="image/*" multiple hidden>
+    </div>
+
+    <div id="controls" class="hidden">
+      <div class="slider-container">
+        <label for="compressionRange">Compression Level:</label>
+        <input type="range" id="compressionRange" min="1" max="100" value="50">
+        <span id="compressionValue">50</span>%
+      </div>
+
+      <div id="previewContainer">
+        <div id="preview" class="preview-grid"></div>
+        <button id="addMoreButton" class="add-more-btn">Add More Images</button>
+      </div>
+
+      <button id="compressButton">Compress All Images</button>
+      <button id="downloadAllButton">Download All Compressed Images</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

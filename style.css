@@ -1,0 +1,143 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
+.upload-area {
+  border: 2px dashed #007BFF;
+  border-radius: 10px;
+  padding: 100px;
+  text-align: center;
+}
+
+.upload-area p {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.upload-area button {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.upload-area button:hover {
+  background: #0056b3;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Slider Section */
+.slider-container {
+  margin: 20px 0;
+}
+
+#compressionRange {
+  width: 50%;
+  margin: 10px 0;
+}
+
+/* Preview Grid */
+#previewContainer {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.preview-item {
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+
+.preview-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  border: 3px solid #ddd;
+}
+
+.preview-item .info {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.preview-item .close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #fff;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 0px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.preview-item .close-button:hover {
+  background-color: #000080;
+  color: white;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#addMoreButton {
+  background-color: #ffc107;
+}
+
+#addMoreButton:hover {
+  background-color: #e0a800;
+}
